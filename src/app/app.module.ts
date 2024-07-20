@@ -4,10 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HomeComponent } from './home/home.component';
+import { ChooseLightComponent } from './choose-light/choose-light.component';
+import { ChooseLightTypeComponent } from './choose-light-type/choose-light-type.component';
+import { PreparationComponent } from './preparation/preparation.component';
+import { AlignmentComponent } from './alignment/alignment.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ChooseLightComponent,
+    ChooseLightTypeComponent,
+    PreparationComponent,
+    AlignmentComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
