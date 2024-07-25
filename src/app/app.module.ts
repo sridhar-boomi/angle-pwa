@@ -10,6 +10,7 @@ import { ChooseLightTypeComponent } from './choose-light-type/choose-light-type.
 import { PreparationComponent } from './preparation/preparation.component';
 import { AlignmentComponent } from './alignment/alignment.component';
 import { HeaderComponent } from './header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HeaderComponent } from './header/header.component';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
