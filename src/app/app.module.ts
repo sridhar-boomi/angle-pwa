@@ -10,6 +10,10 @@ import { ChooseLightTypeComponent } from './choose-light-type/choose-light-type.
 import { PreparationComponent } from './preparation/preparation.component';
 import { AlignmentComponent } from './alignment/alignment.component';
 import { HeaderComponent } from './header/header.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -29,9 +33,14 @@ import { HeaderComponent } from './header/header.component';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    MatToolbarModule,
+    MatCardModule,
+    MatGridListModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
