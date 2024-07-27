@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
+    <div class="navbar-nav" *ngIf="showBackButton">
+      <a class="navbar-link text-black" [routerLink]="backButtonRoute"><i class="bi bi-chevron-left h1"></i></a>
+    </div>
     <div class="navbar-header mx-auto">
       <a class="navbar-brand" href="#">
         <img src="assets/axa_bike_security_logo.png" alt="Logo" style="height: 40px;">

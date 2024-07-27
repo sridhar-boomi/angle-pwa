@@ -1,1 +1,19 @@
-<p>choose-light-type works!</p>
+<div class="container">
+  <div class="row align-items-top">
+    <div class="col">
+      <h1 class="mt-3 theme-color">Which type</h1>
+    </div>
+  </div>
+  <div class="row align-items-top">
+    <div class="col">
+      <p>Choose the right type of the {{serie}}, you'll find this type on the side of the product. </p>
+    </div>
+  </div>
+  <ng-container  *ngFor="let lightType of lightTypes">
+    <div class="row align-items-end mt-5">
+      <div class="col-6 offset-3">
+        <button type="button" class="btn btn-outline-primary text-black" (click)="chooseLightType(lightType)">{{lightType.name}}</button>
+      </div>
+    </div>
+  </ng-container>
+</div>

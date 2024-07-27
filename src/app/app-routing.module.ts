@@ -21,11 +21,11 @@ const routes: Routes = [
   },
   {
     component: ChooseLightTypeComponent,
-    path: 'choose-light-type'
+    path: 'choose-light-type/:serie'
   },
   {
     component: PreparationComponent,
-    path: 'preparation'
+    path: 'preparation/:serie/:lightType'
   },
   {
     component: AlignmentComponent,

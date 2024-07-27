@@ -1,1 +1,19 @@
-<p>choose-light works!</p>
+<div class="container">
+  <div class="row align-items-top">
+    <div class="col">
+      <h1 class="mt-3 theme-color">Your light</h1>
+    </div>
+  </div>
+  <div class="row align-items-top">
+    <div class="col">
+      <p>Choose your AXA light serie.</p>
+    </div>
+  </div>
+  <ng-container  *ngFor="let light of lights">
+    <div class="row align-items-end mt-5">
+      <div class="col-6 offset-3">
+        <button type="button" class="btn btn-outline-primary text-black" (click)="chooseLight(light)">{{light.serie}}</button>
+      </div>
+    </div>
+  </ng-container>
+</div>

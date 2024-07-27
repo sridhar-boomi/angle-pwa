@@ -1,13 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import 'bootstrap/scss/functions';
+
+// Override Bootstrap variables before importing the rest of Bootstrap
+$theme-colors: (
+  "primary": #ff6a00
+);
+
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 .theme-color {
   color: #ff6a00;
 }
 
+.text-white{
+  color: white;
+}
+
+.text-black{
+  color: black;
+}
+
 .orange-button{
-  background-color: #ff6a00; color: white;
+  background-color: #ff6a00;
+  color: white;
+  outline-color: #ff6a00;
+}
+
+.white-button{
+  background-color: white; color: black;
 }
