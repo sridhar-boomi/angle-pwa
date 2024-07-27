@@ -29,7 +29,7 @@ const routes: Routes = [
   },
   {
     component: AlignmentComponent,
-    path: 'alignment'
+    path: 'alignment/:serie/:lightType'
   },
   {
     path: '**',
