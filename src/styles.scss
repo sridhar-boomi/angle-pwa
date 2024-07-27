@@ -2,3 +2,12 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+.theme-color {
+  color: #ff6a00;
+}
+
+.orange-button{
+  background-color: #ff6a00; color: white;
+}
