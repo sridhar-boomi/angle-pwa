@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1724160510111,
+  "timestamp": 1724322910100,
   "index": "/angle-pwa/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,10 @@
       "urls": [
         "/angle-pwa/favicon.ico",
         "/angle-pwa/index.html",
-        "/angle-pwa/main-OHUVDE4V.js",
+        "/angle-pwa/main-Q4W3MQ2S.js",
         "/angle-pwa/manifest.webmanifest",
         "/angle-pwa/polyfills-GTEVC5Y5.js",
-        "/angle-pwa/styles-467GIUBX.css"
+        "/angle-pwa/styles-ZCP3EHYK.css"
       ],
       "patterns": []
     },
@@ -69,13 +69,13 @@
     "/angle-pwa/assets/preparation_step1.png": "65f16c6cac2b1c0c861c3ed3257ca81c7cc0ee65",
     "/angle-pwa/assets/preparation_step2.png": "aaa5f2b2cfba5e8bf23e050efce986feaeac6371",
     "/angle-pwa/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/angle-pwa/index.html": "46e3b1931f708eface718a41822082350bf34748",
-    "/angle-pwa/main-OHUVDE4V.js": "3e92ebc5bdb89b1292ea89982299a6e74fda80d9",
+    "/angle-pwa/index.html": "9ed2377c49004a3386e638e58f4076937ea60abd",
+    "/angle-pwa/main-Q4W3MQ2S.js": "9d09b4555af2982cec1c0daf20316f0b67bfc14e",
     "/angle-pwa/manifest.webmanifest": "e25da0caed2ac886cbd1fdc4d542b4c917728492",
     "/angle-pwa/media/bootstrap-icons-OCU552PF.woff": "d5831fd39baf13aff7626e483b9a089730f18604",
     "/angle-pwa/media/bootstrap-icons-X6UQXWUS.woff2": "020c3c6f9280a315e8425d7f92e15bcd0cdda1b2",
     "/angle-pwa/polyfills-GTEVC5Y5.js": "5edc7aa14a6eccd1ac02fa19901db7032d7cd1be",
-    "/angle-pwa/styles-467GIUBX.css": "f392acf1ac46345466d078560e910378c1cd1269"
+    "/angle-pwa/styles-ZCP3EHYK.css": "28a6c457799c60d9144bc41a94d6c7fc144ca03a"
   },
   "navigationUrls": [
     {
