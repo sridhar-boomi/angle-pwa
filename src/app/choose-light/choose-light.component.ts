@@ -14,8 +14,12 @@ export class ChooseLightComponent {
 
   constructor(private route: Router) { }
 
-  chooseLight(light: Light){
+  chooseLight(light: Light) {
     this.route.navigate(['/choose-light-type', light.serie]);
+  }
+
+  chooseOther() {
+    this.route.navigate(['/other']);
   }
 
 }

@@ -5,6 +5,7 @@ import { ChooseLightComponent } from './choose-light/choose-light.component';
 import { ChooseLightTypeComponent } from './choose-light-type/choose-light-type.component';
 import { PreparationComponent } from './preparation/preparation.component';
 import { AlignmentComponent } from './alignment/alignment.component';
+import { OtherComponent } from './other/other.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     component: ChooseLightComponent,
     path: 'choose-light'
+  },
+  {
+    component: OtherComponent,
+    path: 'other'
   },
   {
     component: ChooseLightTypeComponent,

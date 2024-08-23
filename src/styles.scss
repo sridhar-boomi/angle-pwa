@@ -33,3 +33,13 @@ $theme-colors: (
 .white-button{
   background-color: white; color: black;
 }
+
+.x-circle{
+  color: #cf0000;
+}
+
+.check-circle{
+  color: #00cf15;
+  -webkit-text-stroke-width: 0px;
+  opacity: 1;
+}

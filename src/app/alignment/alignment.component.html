@@ -1,1 +1,74 @@
-<p>alignment works!</p>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col">
+      <p class="text-center">Try to <span class="theme-color">overlap</span> the light with the stripes
+        <br> (Perfect angle is <span class="theme-color">{{expectedAngle}}°</span>)
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>Tilt Angle: {{ tiltAngle.toFixed(2) }} degrees</p>
+      <p>z-axis: {{ latestAlpha.toFixed(2) }} degrees</p>
+      <p>x-axis: {{ latestBeta.toFixed(2) }} degrees</p>
+      <p>y-axis: {{ latestGamma.toFixed(2) }} degrees</p>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container">
+  <div class="bubble" id="bubble"></div>
+  <div class="horizontal-line"></div>
+  <div class="vertical-line"></div>
+</div>
+<p id="status">{{ status }}</p> -->
+
+
+<!-- <div class="container">
+  <h1>Position the Bicycle Headlight</h1>
+  <p>Current Angle: {{ angle | number:'1.1-1' }}°</p>
+  <div *ngIf="isAngleCorrect()" class="tick-mark">✔</div>
+  <div class="light-container">
+    <img src="assets/head_of_the_light.png" alt="Head of the light" class="light-head">
+    <img src="assets/orange_light_beam.png" alt="Light beam" class="light-beam">
+    <img src="assets/foot_of_the_light.png" alt="Foot of the light" class="light-foot">
+  </div>
+</div> -->
+
+<div class="container landscape-container">
+  <div class="row mt-3">
+    <div class="col-1">
+      <button class="btn" (onclick)="backButtonClick()"><i class="bi bi-chevron-left h1"></i></button>
+    </div>
+    <div class="col-11">
+      <p class="text-center">Try to <span class="theme-color">overlap</span> the light with the stripes
+        <br> (Perfect angle is <span class="theme-color">{{expectedAngle}}°</span>)
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="light-container">
+        <div *ngIf="isAngleCorrect()" class="tick-mark"><i class="bi bi-check-circle-fill"></i></div>
+        <img src="assets/head_of_the_light.png" class="head" alt="Head of the light">
+        <img src="assets/foot_of_the_light.png" class="foot" alt="Foot of the light">
+        <img src="assets/orange_light_beam.png" class="beam" alt="Light beam" [ngStyle]="lightBeamStyle">
+        <div class="angle-number" [ngStyle]="angleNumberStyle">{{ angle | number:'1.1-1' }}°</div>
+        <div class="dashed-line-1" [ngStyle]="lineStyle1"></div>
+        <div class="dashed-line-2" [ngStyle]="lineStyle2"></div>
+        <!-- <img src="assets/combined_light.png" class="beam" alt="light">
+
+        <div class="dotted-line" [ngStyle]="lineStyle1"></div>
+        <div class="dotted-line" [ngStyle]="lineStyle2"></div> -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn theme-color flip-button"><i class="bi bi-arrow-repeat h1"></i></button>
+    </div>
+  </div>
+</div>
+
+<div class="rotate-message">
+  Please rotate your device to landscape mode.
+</div>

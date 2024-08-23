@@ -11,6 +11,7 @@ import { PreparationComponent } from './preparation/preparation.component';
 import { AlignmentComponent } from './alignment/alignment.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { OtherComponent } from './other/other.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ChooseLightTypeComponent,
     PreparationComponent,
     AlignmentComponent,
-    HeaderComponent
+    HeaderComponent,
+    OtherComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,27 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angle-pwa';
-  latestBeta: number = 0;
-  latestGamma: number = 0;
-  tiltAngle: number = 0;
+
+  showHeader: boolean = true;
+
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
-    if (window.DeviceOrientationEvent) {
-      window.addEventListener('deviceorientation', this.handleOrientation, true);
-    } else {
-      alert("DeviceOrientationEvent is not supported on this device.");
-      //console.log("DeviceOrientationEvent is not supported on this device.");
-    }
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.showHeader = !event.urlAfterRedirects.startsWith('/alignment');
+      }
+    });
   }
-
-  handleOrientation = (event: DeviceOrientationEvent) => {
-    this.latestBeta = event.beta ?? 0;
-    this.latestGamma = event.gamma ?? 0;
-    this.tiltAngle = Math.sqrt((this.latestBeta ? this.latestBeta * this.latestBeta : 0) + (this.latestGamma ? this.latestGamma * this.latestGamma : 0));
-  }
-
-  // calculateTiltAngle(){
-  //   alert("calculateTiltAngle");
-  //   this.tiltAngle = Math.sqrt((this.latestBeta ? this.latestBeta * this.latestBeta : 0) + (this.latestGamma ? this.latestGamma * this.latestGamma : 0));
-  // }
 }
