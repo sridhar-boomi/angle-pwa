@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1724397114496,
+  "timestamp": 1724402508277,
   "index": "/angle-pwa/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/angle-pwa/favicon.ico",
         "/angle-pwa/index.html",
-        "/angle-pwa/main-TBUSRQZF.js",
+        "/angle-pwa/main-C4PIHFWQ.js",
         "/angle-pwa/manifest.webmanifest",
         "/angle-pwa/polyfills-GTEVC5Y5.js",
         "/angle-pwa/styles-ZCP3EHYK.css"
@@ -69,8 +69,8 @@
     "/angle-pwa/assets/preparation_step1.png": "65f16c6cac2b1c0c861c3ed3257ca81c7cc0ee65",
     "/angle-pwa/assets/preparation_step2.png": "aaa5f2b2cfba5e8bf23e050efce986feaeac6371",
     "/angle-pwa/favicon.ico": "fb77a452a0ca6f096a9c264c2614e37df463882c",
-    "/angle-pwa/index.html": "eb342202f005bbc52fcb46d6aafde64f108c9044",
-    "/angle-pwa/main-TBUSRQZF.js": "aad0ee4906a741ab79d05246b7e5446e41e390e6",
+    "/angle-pwa/index.html": "ed91df776d0baffc999494517fb13d682eccd79b",
+    "/angle-pwa/main-C4PIHFWQ.js": "63ba49a74ddad421c1ea19c5c874ccceedfcae51",
     "/angle-pwa/manifest.webmanifest": "e25da0caed2ac886cbd1fdc4d542b4c917728492",
     "/angle-pwa/media/bootstrap-icons-OCU552PF.woff": "d5831fd39baf13aff7626e483b9a089730f18604",
     "/angle-pwa/media/bootstrap-icons-X6UQXWUS.woff2": "020c3c6f9280a315e8425d7f92e15bcd0cdda1b2",
