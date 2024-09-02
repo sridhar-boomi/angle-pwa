@@ -35,7 +35,7 @@
     display: block;
   }
 
-  .tick-mark {
+  .tick-mark-towards-right {
     font-size: 50px;
     color: green;
     position: absolute;
@@ -133,6 +133,95 @@
     top: 365px;
     left: 50%;
     z-index: 1;
+  }
+
+  .tick-mark-towards-left {
+    font-size: 50px;
+    color: green;
+    position: absolute;
+    top: 90px;
+    left: 575px;
+    z-index: 1;
+  }
+
+  .light-container-towards-left {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    /* Adjust as needed for your layout */
+    height: 100%;
+    /* Adjust as needed for your layout */
+  }
+
+  .head-towards-left {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    z-index: 1;
+    /* Ensure it is above the foot */
+    width: 200px;
+  }
+
+  .foot-towards-left {
+    position: absolute;
+    top: 155px;
+    left: 588px;
+    z-index: 2;
+    /* Ensure it is below the head */
+    width: 200px;
+  }
+
+  .beam-towards-left {
+    position: absolute;
+    top: -47px;
+    /* Adjust this value to create the slight space */
+    left: 118px;
+    z-index: 0;
+    /* Ensure it is below the head and foot */
+    width: 700px;
+    height: 354px;
+  }
+
+  .angle-number-towards-left {
+    position: absolute;
+    top: 65px;
+    /* Adjust this value to position the number over the beam */
+    left: 200px;
+    z-index: 2;
+    /* Ensure it is above the beam and other images */
+    font-size: 80px;
+    /* Adjust the font size as needed */
+    color: white;
+    /* Adjust the color as needed */
+    font-weight: bold;
+    /* Optional: make the number bold */
+  }
+
+  .dashed-line-1-towards-left {
+    position: absolute;
+    top: 55px;
+    left: 510px;
+    width: 57%;
+    height: 5px;
+    border-top: 2px dashed black;
+    transform-origin: 0 0;
+    /* Start of the line */
+    transition: transform 0s ease-in-out;
+    transform: rotate(194deg);
+    // transform: rotate3d(1, 1, 1, -27deg)
+  }
+
+  .dashed-line-2-towards-left {
+    position: absolute;
+    top: 204px;
+    left: 514px;
+    width: 60%;
+    height: 5px;
+    border-top: 2px dashed black;
+    transform-origin: 0 0;
+    /* Start of the line */
+    transition: transform 0s ease-in-out;
+    transform: rotate(-194deg);
   }
 
 }

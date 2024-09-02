@@ -9,23 +9,37 @@
       </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row" *ngIf="isLightTowardsRight">
     <div class="col">
       <div class="light-container-towards-right">
-        <div *ngIf="isAngleCorrect()" class="tick-mark"><i class="bi bi-check-circle-fill"></i></div>
+        <div *ngIf="isAngleCorrect()" class="tick-mark-towards-right"><i class="bi bi-check-circle-fill"></i></div>
         <img src="assets/head_of_the_light_towards_right.png" class="head-towards-right" alt="Head of the light">
         <img src="assets/foot_of_the_light_towards_right.png" class="foot-towards-right" alt="Foot of the light">
         <img src="assets/orange_light_beam_towards_right.png" class="beam-towards-right" alt="Light beam"
-          [ngStyle]="lightBeamStyle">
-        <div class="angle-number-towards-right" [ngStyle]="angleNumberStyle">{{ angle | number:'1.1-1' }}°</div>
-        <div class="dashed-line-1-towards-right" [ngStyle]="lineStyle1"></div>
-        <div class="dashed-line-2-towards-right" [ngStyle]="lineStyle2"></div>
+          [ngStyle]="lightBeamStyleTowardsRight">
+        <div class="angle-number-towards-right" [ngStyle]="angleNumberStyleTowardsRight">{{ angle | number:'1.1-1' }}°</div>
+        <div class="dashed-line-1-towards-right" [ngStyle]="lineStyle1TowardsRight"></div>
+        <div class="dashed-line-2-towards-right" [ngStyle]="lineStyle2TowardsRight"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="!isLightTowardsRight">
+    <div class="col">
+      <div class="light-container-towards-left">
+        <div *ngIf="isAngleCorrect()" class="tick-mark-towards-left"><i class="bi bi-check-circle-fill"></i></div>
+        <img src="assets/head_of_the_light_towards_left.png" class="head-towards-left" alt="Head of the light">
+        <img src="assets/foot_of_the_light_towards_left.png" class="foot-towards-left" alt="Foot of the light">
+        <img src="assets/orange_light_beam_towards_left.png" class="beam-towards-left" alt="Light beam"
+          [ngStyle]="lightBeamStyleTowardsLeft">
+        <div class="angle-number-towards-left" [ngStyle]="angleNumberStyleTowardsLeft">{{ angle | number:'1.1-1' }}°</div>
+        <div class="dashed-line-1-towards-left" [ngStyle]="lineStyle1TowardsLeft"></div>
+        <div class="dashed-line-2-towards-left" [ngStyle]="lineStyle2TowardsLeft"></div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <button class="btn theme-color flip-button"><i class="bi bi-arrow-repeat h1"></i></button>
+      <button class="btn theme-color flip-button" (click)="flipButtonClick()"><i class="bi bi-arrow-repeat h1"></i></button>
     </div>
   </div>
 </div>
