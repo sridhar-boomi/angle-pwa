@@ -9,7 +9,7 @@ import { filter } from 'rxjs';
 })
 export class HeaderComponent {
 
-  showBackButton = false;
+  showBackButton = true;
 
   constructor(private router: Router) { }
 
@@ -19,6 +19,10 @@ export class HeaderComponent {
       .subscribe((event) => {
         this.showBackButton = !(this.router.url === '/' || this.router.url === '/home');
       });
+  }
+
+  onBackButtonClick() {
+    window.history.back();
   }
 
 

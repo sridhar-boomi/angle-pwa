@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Lights } from '../constants/app-data';
 import { ActivatedRoute } from '@angular/router';
 import { DeviceSensorService } from './device-sensor-service';
+import { VibrationService } from './vibration.service';
+import { OrientationService } from './orientation.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-alignment',
@@ -33,8 +36,14 @@ export class AlignmentComponent {
   lightBeamStyleTowardsLeft = {};
   angleNumberStyleTowardsLeft = {};
 
+  isLandscape: Observable<boolean>;
+
   constructor(private activatedRoute: ActivatedRoute,
-    private deviceSensorService: DeviceSensorService) { }
+    private deviceSensorService: DeviceSensorService,
+    private vibrationService: VibrationService,
+    private orientationService: OrientationService) {
+      this.isLandscape = this.orientationService.isLandscape();
+     }
 
   ngOnInit(): void {
 
@@ -42,8 +51,7 @@ export class AlignmentComponent {
     this.initiateAlignment();
   }
 
-  backButtonClick() {
-    console.log('back button clicked');
+  onBackButtonClick() {
     window.history.back();
   }
 
@@ -108,7 +116,13 @@ export class AlignmentComponent {
   }
 
   isAngleCorrect(): boolean {
-    return Math.abs(this.angle - this.expectedAngle) <= this.tolerance;
+    let isCorrectAngle = Math.abs(this.angle - this.expectedAngle) <= this.tolerance;
+    this.isLandscape.subscribe(landscape => {
+      if(landscape && isCorrectAngle) {
+        this.vibrationService.playSound();
+      }
+    });
+    return isCorrectAngle;
   }
 
   flipButtonClick(): void {
