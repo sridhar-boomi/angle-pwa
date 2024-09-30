@@ -40,8 +40,8 @@
     font-size: 50px;
     color: green;
     position: absolute;
-    top: 90px;
-    left: 120px;
+    top: 65px;
+    left: 135px;
     z-index: 1;
   }
 
@@ -56,41 +56,41 @@
 
   .head-towards-right {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 40px;
+    left: 77px;
     z-index: 1;
     /* Ensure it is above the foot */
-    width: 200px;
+    width: 170px;
   }
 
   .foot-towards-right {
     position: absolute;
-    top: 155px;
-    left: -40px;
+    top: 130px;
+    left: 0px;
     z-index: 2;
     /* Ensure it is below the head */
-    width: 200px;
+    width: 170px;
   }
 
   .beam-towards-right {
     position: absolute;
-    top: -47px;
+    top: -43px;
     /* Adjust this value to create the slight space */
-    left: -55px;
+    left: -15px;
     z-index: 0;
     /* Ensure it is below the head and foot */
-    width: 700px;
-    height: 354px;
+    width: 600px;
+    height: 302px;
   }
 
   .angle-number-towards-right {
     position: absolute;
-    top: 65px;
+    top: 55px;
     /* Adjust this value to position the number over the beam */
     left: 400px;
     z-index: 2;
     /* Ensure it is above the beam and other images */
-    font-size: 80px;
+    font-size: 70px;
     /* Adjust the font size as needed */
     color: white;
     /* Adjust the color as needed */
@@ -104,9 +104,9 @@
 
   .dashed-line-1-towards-right {
     position: absolute;
-    top: 55px;
+    top: 47px;
     left: 240px;
-    width: 60%;
+    width: 51%;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
@@ -118,9 +118,9 @@
 
   .dashed-line-2-towards-right {
     position: absolute;
-    top: 200px;
-    left: 232px;
-    width: 60%;
+    top: 166px;
+    left: 234px;
+    width: 52%;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
@@ -131,8 +131,13 @@
 
   .flip-button {
     position: absolute;
-    top: 365px;
+    top: 300px;
     left: 50%;
+    z-index: 1;
+  }
+
+  .back-button {
+    position: absolute;
     z-index: 1;
   }
 
@@ -140,8 +145,8 @@
     font-size: 50px;
     color: green;
     position: absolute;
-    top: 90px;
-    left: 575px;
+    top: 70px;
+    right: 135px;
     z-index: 1;
   }
 
@@ -156,41 +161,41 @@
 
   .head-towards-left {
     position: absolute;
-    top: 50px;
-    left: 500px;
+    top: 40px;
+    right: 77px;
     z-index: 1;
     /* Ensure it is above the foot */
-    width: 200px;
+    width: 170px;
   }
 
   .foot-towards-left {
     position: absolute;
-    top: 155px;
-    left: 588px;
+    top: 130px;
+    right: 0px;
     z-index: 2;
     /* Ensure it is below the head */
-    width: 200px;
+    width: 170px;
   }
 
   .beam-towards-left {
     position: absolute;
-    top: -47px;
+    top: -43px;
     /* Adjust this value to create the slight space */
-    left: 118px;
+    right: -15px;
     z-index: 0;
     /* Ensure it is below the head and foot */
-    width: 700px;
-    height: 354px;
+    width: 600px;
+    height: 302px;
   }
 
   .angle-number-towards-left {
     position: absolute;
-    top: 65px;
+    top: 55px;
     /* Adjust this value to position the number over the beam */
-    left: 200px;
+    right: 400px;
     z-index: 2;
     /* Ensure it is above the beam and other images */
-    font-size: 80px;
+    font-size: 70px;
     /* Adjust the font size as needed */
     color: white;
     /* Adjust the color as needed */
@@ -200,9 +205,9 @@
 
   .dashed-line-1-towards-left {
     position: absolute;
-    top: 55px;
-    left: 510px;
-    width: 57%;
+    top: 46px;
+    right: -115px;
+    width: 51%;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
@@ -214,9 +219,9 @@
 
   .dashed-line-2-towards-left {
     position: absolute;
-    top: 204px;
-    left: 514px;
-    width: 60%;
+    top: 170px;
+    right: -129px;
+    width: 52%;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;

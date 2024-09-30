@@ -63,10 +63,10 @@ export class AlignmentComponent {
             this.angle = event.beta ?? 0;
             if(this.isLightTowardsRight) {
               this.lineStyle1TowardsRight = {
-                transform: `rotate(${-14 + this.angle}deg)`
+                transform: `rotate(${-14.5 + this.angle}deg)`
               };
               this.lineStyle2TowardsRight = {
-                transform: `rotate(${14 + this.angle}deg)`
+                transform: `rotate(${14.5 + this.angle}deg)`
               };
               this.angleNumberStyleTowardsRight = {
                 transform: `rotate(${this.angle}deg)`
