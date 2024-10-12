@@ -101,7 +101,7 @@ export class AlignmentComponent {
 
     const light = this.lights.find(light => light.serie === this.serie);
     const type = light?.types.find(type => type.name === this.lightType);
-    this.expectedAngle = type?.angle ?? 0;
+    this.expectedAngle = this.calculateExpectedAngle(type?.angle ?? 0);
     if(this.isLightTowardsRight) {
       this.lightBeamStyleTowardsRight = {
         transform: `rotate(${this.expectedAngle}deg)`
@@ -113,6 +113,15 @@ export class AlignmentComponent {
       }
     }
 
+  }
+
+  calculateExpectedAngle(angle: number): number {
+    if(this.isLightTowardsRight) {
+      return angle;
+    }
+    else{
+      return angle * -1;
+    }
   }
 
   isAngleCorrect(): boolean {
