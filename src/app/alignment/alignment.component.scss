@@ -42,18 +42,18 @@
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 1000px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
 
   .landscape-container {
     display: block;
   }
 
   .tick-mark-towards-right {
-    font-size: 50px;
+    font-size: 40px;
     color: green;
     position: absolute;
-    top: 65px;
-    left: 135px;
+    top: 75px;
+    left: 150px;
     z-index: 1;
   }
 
@@ -68,41 +68,41 @@
 
   .head-towards-right {
     position: absolute;
-    top: 40px;
-    left: 77px;
+    top: 44px;
+    left: 100px;
     z-index: 1;
     /* Ensure it is above the foot */
-    width: 170px;
+    width: 140px;
   }
 
   .foot-towards-right {
     position: absolute;
-    top: 130px;
-    left: 0px;
+    top: 125px;
+    left: 50px;
     z-index: 2;
     /* Ensure it is below the head */
-    width: 170px;
+    width: 125px;
   }
 
   .beam-towards-right {
     position: absolute;
-    top: -43px;
+    top: -23px;
     /* Adjust this value to create the slight space */
-    left: -15px;
+    left: 14px;
     z-index: 0;
     /* Ensure it is below the head and foot */
-    width: 600px;
-    height: 302px;
+    width: 500px;
+    height: 247px;
   }
 
   .angle-number-towards-right {
     position: absolute;
-    top: 55px;
+    top: 60px;
     /* Adjust this value to position the number over the beam */
-    left: 400px;
+    left: 390px;
     z-index: 2;
     /* Ensure it is above the beam and other images */
-    font-size: 70px;
+    font-size: 50px;
     /* Adjust the font size as needed */
     color: white;
     /* Adjust the color as needed */
@@ -116,9 +116,9 @@
 
   .dashed-line-1-towards-right {
     position: absolute;
-    top: 47px;
-    left: 240px;
-    width: 352px;
+    top: 50px;
+    left: 234px;
+    width: 288px;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
@@ -130,9 +130,9 @@
 
   .dashed-line-2-towards-right {
     position: absolute;
-    top: 166px;
-    left: 234px;
-    width: 352px;
+    top: 149px;
+    left: 231px;
+    width: 295px;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
@@ -143,18 +143,18 @@
 
   .flip-button {
     position: absolute;
-    top: 300px;
+    top: 280px;
     left: 50%;
     z-index: 1;
   }
 
 
   .tick-mark-towards-left {
-    font-size: 50px;
+    font-size: 40px;
     color: green;
     position: absolute;
-    top: 70px;
-    left: 510px;
+    top: 75px;
+    left: 500px;
     z-index: 1;
   }
 
@@ -169,237 +169,40 @@
 
   .head-towards-left {
     position: absolute;
-    top: 40px;
+    top: 44px;
     left: 450px;
     z-index: 1;
     /* Ensure it is above the foot */
-    width: 170px;
+    width: 140px;
   }
 
   .foot-towards-left {
     position: absolute;
-    top: 130px;
-    left: 525px;
+    top: 125px;
+    left: 515px;
     z-index: 2;
     /* Ensure it is below the head */
-    width: 170px;
+    width: 125px;
   }
 
   .beam-towards-left {
     position: absolute;
-    top: -43px;
+    top: -20px;
     /* Adjust this value to create the slight space */
-    left: 110px;
+    left: 175px;
     z-index: 0;
     /* Ensure it is below the head and foot */
-    width: 600px;
-    height: 302px;
+    width: 500px;
+    height: 240px;
   }
 
   .angle-number-towards-left {
     position: absolute;
-    top: 55px;
+    top: 60px;
     /* Adjust this value to position the number over the beam */
     left: 200px;
     z-index: 2;
     /* Ensure it is above the beam and other images */
-    font-size: 70px;
-    /* Adjust the font size as needed */
-    color: white;
-    /* Adjust the color as needed */
-    font-weight: bold;
-    /* Optional: make the number bold */
-  }
-
-  .dashed-line-1-towards-left {
-    position: absolute;
-    top: 46px;
-    left: 457px;
-    width: 51%;
-    width: 352px;
-    border-top: 2px dashed black;
-    transform-origin: 0 0;
-    /* Start of the line */
-    transition: transform 0s ease-in-out;
-    transform: rotate(194deg);
-    // transform: rotate3d(1, 1, 1, -27deg)
-  }
-
-  .dashed-line-2-towards-left {
-    position: absolute;
-    top: 170px;
-    left: 464px;
-    width: 352px;
-    height: 5px;
-    border-top: 2px dashed black;
-    transform-origin: 0 0;
-    /* Start of the line */
-    transition: transform 0s ease-in-out;
-    transform: rotate(-194deg);
-  }
-
-}
-
-@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
-
-  .landscape-container {
-    display: block;
-  }
-
-  .tick-mark-towards-right {
-    font-size: 40px;
-    color: green;
-    position: absolute;
-    top: 65px;
-    left: 90px;
-    z-index: 1;
-  }
-
-  .light-container-towards-right {
-    align-items: center;
-    position: relative;
-    width: 100%;
-    /* Adjust as needed for your layout */
-    height: 100%;
-    /* Adjust as needed for your layout */
-  }
-
-  .head-towards-right {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 1;
-    /* Ensure it is above the foot */
-    width: 140px;
-  }
-
-  .foot-towards-right {
-    position: absolute;
-    top: 115px;
-    left: -22px;
-    z-index: 2;
-    /* Ensure it is below the head */
-    width: 140px;
-  }
-
-  .beam-towards-right {
-    position: absolute;
-    top: -29px;
-    /* Adjust this value to create the slight space */
-    left: -33px;
-    z-index: 0;
-    /* Ensure it is below the head and foot */
-    width: 500px;
-    height: 248px;
-  }
-
-  .angle-number-towards-right {
-    position: absolute;
-    top: 55px;
-    /* Adjust this value to position the number over the beam */
-    left: 340px;
-    z-index: 2;
-    /* Ensure it is above the beam and other images */
-    font-size: 50px;
-    /* Adjust the font size as needed */
-    color: white;
-    /* Adjust the color as needed */
-    font-weight: bold;
-    /* Optional: make the number bold */
-  }
-
-  .rotate-message {
-    display: none;
-  }
-
-  .dashed-line-1-towards-right {
-    position: absolute;
-    top: 45px;
-    left: 174px;
-    width: 300px;
-    height: 5px;
-    border-top: 2px dashed black;
-    transform-origin: 0 0;
-    /* Start of the line */
-    transition: transform 0s ease-in-out;
-    transform: rotate(-14deg);
-    // transform: rotate3d(1, 1, 1, -27deg)
-  }
-
-  .dashed-line-2-towards-right {
-    position: absolute;
-    top: 146px;
-    left: 170px;
-    width: 300px;
-    height: 5px;
-    border-top: 2px dashed black;
-    transform-origin: 0 0;
-    /* Start of the line */
-    transition: transform 0s ease-in-out;
-    transform: rotate(14deg);
-  }
-
-  .flip-button {
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    z-index: 1;
-  }
-
-  .tick-mark-towards-left {
-    font-size: 40px;
-    color: green;
-    position: absolute;
-    top: 70px;
-    left: 350px;
-    z-index: 1;
-  }
-
-  .light-container-towards-left {
-    align-items: center;
-    position: relative;
-    width: 100%;
-    /* Adjust as needed for your layout */
-    height: 100%;
-    /* Adjust as needed for your layout */
-  }
-
-  .head-towards-left {
-    position: absolute;
-    top: 40px;
-    left: 300px;
-    z-index: 1;
-    /* Ensure it is above the foot */
-    width: 140px;
-  }
-
-  .foot-towards-left {
-    position: absolute;
-    top: 116px;
-    left: 362px;
-    z-index: 2;
-    /* Ensure it is below the head */
-    width: 140px;
-  }
-
-  .beam-towards-left {
-    position: absolute;
-    top: -29px;
-    /* Adjust this value to create the slight space */
-    left: 15px;
-    z-index: 0;
-    /* Ensure it is below the head and foot */
-    width: 500px;
-    height: 250px;
-  }
-
-  .angle-number-towards-left {
-    position: absolute;
-    top: 55px;
-    /* Adjust this value to position the number over the beam */
-    left: 80px;
-    z-index: 2;
-    /* Ensure it is above the beam and other images */
     font-size: 50px;
     /* Adjust the font size as needed */
     color: white;
@@ -410,10 +213,9 @@
 
   .dashed-line-1-towards-left {
     position: absolute;
-    top: 46px;
-    left: 307px;
-    width: 300px;
-    height: 5px;
+    top: 52px;
+    left: 456px;
+    width: 288px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
     /* Start of the line */
@@ -424,9 +226,9 @@
 
   .dashed-line-2-towards-left {
     position: absolute;
-    top: 146px;
-    left: 311px;
-    width: 300px;
+    top: 150px;
+    left: 461px;
+    width: 296px;
     height: 5px;
     border-top: 2px dashed black;
     transform-origin: 0 0;
